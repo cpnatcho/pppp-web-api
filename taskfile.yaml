@@ -1,0 +1,13 @@
+---
+version: "3"
+
+tasks:
+  install:
+    cmds:
+      - "brew install markdownlint-cli yamllint go-task"
+
+  lint:
+    cmds:
+      - "markdownlint ."
+      - "yamllint ."
+...
