@@ -24,3 +24,9 @@ task lint
 ```shell
 task test
 ```
+
+### Building
+
+```shell
+task build
+```
