@@ -25,6 +25,16 @@ jobs:
       - name: "Execute markdownlint"
         run: "markdownlint ."
 
+  golangci-lint-job:
+    runs-on: "ubuntu-24.04"
+    container:
+      image: "golangci/golangci-lint:v2.10.1"
+    steps:
+      - name: "Check out repository"
+        uses: "actions/checkout@v4.2.2"
+      - name: "Execute golangci-lint"
+        run: "golangci-lint run"
+
   testing-job:
     runs-on: "ubuntu-24.04"
     container:
