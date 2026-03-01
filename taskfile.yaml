@@ -10,4 +10,8 @@ tasks:
     cmds:
       - "markdownlint ."
       - "yamllint ."
+
+  test:
+    cmds:
+      - "go test ."
 ...

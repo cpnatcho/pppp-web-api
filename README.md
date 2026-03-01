@@ -18,3 +18,9 @@ task install
 ```shell
 task lint
 ```
+
+### Testing
+
+```shell
+task test
+```
